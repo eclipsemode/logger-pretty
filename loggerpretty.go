@@ -1,4 +1,4 @@
-package main
+package logger_pretty
 
 import (
 	"github.com/eclipsemode/logger-pretty/internal/app/slogdiscard"
