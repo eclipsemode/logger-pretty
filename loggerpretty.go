@@ -1,7 +1,6 @@
 package logger_pretty
 
 import (
-	"github.com/eclipsemode/logger-pretty/internal/app/slogdiscard"
 	"github.com/eclipsemode/logger-pretty/internal/app/slogpretty"
 	"log/slog"
 	"os"
@@ -17,8 +16,4 @@ func NewPrettySlog() *slog.Logger {
 	handler := opts.NewPrettyHandler(os.Stdout)
 
 	return slog.New(handler)
-}
-
-func NewDiscardSlog() *slog.Logger {
-	return slogdiscard.NewDiscardLogger()
 }
